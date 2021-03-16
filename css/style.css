@@ -1,0 +1,623 @@
+/* (*) - RESET - AQUI RESETAMOS TODAS CONFIGURAÇÕES DEFAULT DA PAGINA HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+/* FIM DO RESET*/
+
+/* (HTML, BODY) - AQUI DEFINIMOS A ALTURA DESSES ELEMENTOS EM 100% */
+html, body {
+    height:100%;
+    background-color:  #b3c6ff
+    ;
+}
+/* FIM DO HTML, BODY */
+
+/*LIMPAR FLUTUAÇÕES*/
+.clear{
+    clear: both;
+}
+
+/* DEFINE O CONTEXTO MAXIMO DENTRO DA PAGINA*/
+.container{
+    max-width: 1400px;
+}
+
+/****************************************************************/
+/****************************************************************/
+
+
+
+
+/*** AQUI INICIA AS CONFIGURAÇÕES DO HEADER ***/
+
+
+/* CONFIGURA O HEADER ONDE ESTA LOCALIZADO A LOGO E A BARRA DE NAVEGAÇÃO*/
+header{
+    background-color:violet;
+    padding: 20px 2%;
+}
+
+/* CONFIGURA A CAIXA ONDE ESTÁ A LOGOMARCA*/
+div.box-logo img{
+    float: left;
+    width: 236px;
+}
+
+/*MANIPULA O MENU MOBILE*/
+div.container nav.menu-mobile{
+        display: none;
+        float: right;
+         width: 45px;
+         height: 45px;
+         background-image: url('../images/menu-mobile.png');
+         background-size: 100% 100%;
+         margin-right: 5%;
+      
+    }
+
+div.container nav.menu-mobile ul {
+    z-index: 999;
+    background-color:rgb(230, 218, 56);
+    width: 100%;
+    position: absolute; top: 65px; left: 0;
+    /*padding: 15px;*/
+    text-align: center;
+    border: 1px solid green;
+    /*display:none;*/
+     
+    }
+
+div.container nav.menu-mobile ul li{
+
+    border: 1px solid black;
+width: 100%;
+padding: 25px; 
+
+}
+div.container nav.menu-mobile ul li a{
+width: 100%;
+padding: 10px;
+}
+
+
+/* CONFIGURA A CAIXA DA BARRA DE NAVEGAÇÃO*/
+div.container nav.menu-desktop{
+    background-color: rgb(66, 7, 226);
+    float: right;
+    }
+
+
+/* CONFIGURA A CAIXA DA BARRA DE NAVEGAÇÃO DIRETAMENTE NAS LI*/
+div.container nav.menu-desktop li{
+    background-color: rgba(251, 255, 0, 0.5);
+    list-style-type: none;
+    float: left;
+}
+
+
+/* CONFIGURA OS LINKS " A " DENTRO DA CAIXA DE NAVEGAÇÃO NAV*/
+div.container nav.menu-desktop li a{
+    
+    color: #250909;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    padding: 0 20px;
+    
+}
+
+
+/*** AQUI FINALIZA AS CONFIGURAÇÕES DO HEADER ***/
+
+
+
+
+/** AQUI INICIA A CONFIGURAÇÃO DO MOSAICO***/
+
+.mosaico-simples{
+    float: left;
+    width: calc(100% / 6);
+}
+
+.imagem-mosaico{
+    width: 100%;
+    padding-top: 100%;
+    background-color: gray;
+    border: 5px solid rgb(195, 30, 30);
+}
+
+/** AQUI FINALIZA A CONFIGURAÇÃO DO MOSAICO***/
+
+
+
+
+/** AQUI INICIA A CONFIGURAÇÃO DO SEGUNDO MOSAICO**/
+
+    /* CONFIGURAÇÃO DO CONTAINER ONDE FICA AS 03 CAIXAS*/
+
+     section.servicos > .container  {
+        display: flex; 
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto; 
+        align-items: center;
+        border: 3px solid rgb(17, 245, 47);
+        background-color:hsl(25, 76%, 31%, 0.5)
+        /*height:400px;*/
+        /*color: rgb(248, 21, 173);*/
+        
+
+                
+    }
+
+    /* CONFIGURAÇÃO DAS 03 CAIXAS QUE ESTÃO DENTRO DO CONTAINER */
+    section.servicos>.container .box-servicos{
+        /*display: flex;*/
+        border: rgb(238, 2, 167) 1px solid;
+        position: relative; top:-35px;
+        background-image: url('../images/dente.png');
+        background-size: 18px 18px;
+        background-position: center 95%;
+        background-repeat: no-repeat;
+    
+    }
+    
+    /* CONFIGURAÇÃO DE TODOS (h2)  QUE ESTÃO DENTRO DO SEGUNDO MOSAICO*/
+    section.servicos >.container .box-servicos h2{
+        color: silver;
+        font-weight: bold;
+        font-size:25px;
+        text-transform: uppercase;
+    }
+    
+    /* CONFIGURAÇÃO DE TODOS (p)  QUE ESTÃO DENTRO DO SEGUNDO MOSAICO*/
+    section.servicos >.container .box-servicos p{
+        color: rgba(40, 1, 148, 0.815);
+        font-weight: normal;
+        font-size:14px;
+        margin-top: 8px;
+        padding-bottom: 5px ;
+        
+    }
+    
+    
+    
+    /* CONFIGURAÇÃO DA BOX DO LADO DIREITO*/
+    section.servicos >.container .box-servicos:nth-last-of-type(1){
+        color:rgb(18, 233, 36);
+        width: 30%;
+        padding: 30px 2%;
+        background-color: #576975;
+    }
+
+    /* CONFIGURAÇÃO DA BOX DO LADO CENTRO*/
+    section.servicos >.container .box-servicos:nth-last-of-type(2){
+        color:rgb(56, 7, 218);
+        width:40%;
+        padding: 60px 2%;
+        background-color: #688293;
+        background-image: none;
+    }
+    /* CONFIGURAÇÃO DA BOX DO LADO ESQUERDO*/
+    section.servicos >.container .box-servicos:nth-last-of-type(3){
+        color:rgb(218, 204, 7);
+        width: 30%;
+        padding: 30px 2%;
+        background-color: #576975;
+    
+    }
+
+
+    /** AQUI INICIA A CONFIGURAÇÃO DO SEGUNDO MOSAICO**/
+
+
+
+
+
+/** AQUI COMEÇA A CONFIGURAÇÃO DA SECTION PERFIL**/
+
+    section.perfil-container > .container {
+        max-width:900px;
+        margin: 0 auto;
+        
+        
+    }
+
+    /* MANIPULA TODA A CAIXA PERFIL*/
+    section.perfil-container .capsula-perfil{
+        padding-top: 60%;
+        position: relative;
+    
+
+    }
+    /* CAPSULA ONDE ESTÁ A IMAGEM, H2 E O P */
+    section.perfil-container .capsula-perfil-2{
+        position: absolute; left: 0; top: 0;
+        display: flex;
+        /*padding: 25px;*/
+        width: 100%;
+        height: 100%;
+        background-color: springgreen;
+        align-items: center;
+
+    }
+
+    .perfil-container{
+        padding: 40px 0;
+        background-color: rgb(240, 141, 11);
+    }
+    
+        /*MANIPULA CAIXA ONDE FICA O TEXTO DO PERFIL*/
+    .texto-perfil{
+        padding: 0 10%;
+        width: 60%;
+    }
+
+    .texto-perfil h2{
+        color:#698293;
+        font-size: 18px;
+    }
+
+    .texto-perfil p{
+        color: #4b4b4b;
+        font-size:14px;
+        margin-top: 8%;
+    }
+
+    /* MANIPULA A IMAGEM QUE ESTÁ DENTRO DO PERFIL-CONTAINER*/
+    section.perfil-container .img-perfil{
+        width:40%;
+        height: 100%;
+        background-image: url('../images/img_perfil.png');
+        background-size: 100% 100%;
+    }
+
+/** AQUI TERMINA A CONFIGURAÇÃO DA SECTION PERFIL**/
+
+
+/*AQUI É O INICIO DA SECTION VIDEO*/
+    section.videos{
+        padding: 50px 0;
+    }
+    section.videos .box-video{
+        float: left;
+        width:33.3%;
+        position: relative;
+        border: 5px solid white;
+        background-color: chartreuse;
+        padding-top: calc(33.3% * 0.6);
+    }
+    section.videos .box-video iframe{
+        position: absolute; left: 0; top: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+/*AQUI É O FIM DA SECTION VIDEO*/
+
+/*AQUI É O INICIO DA SECTION TRATAMENTO*/
+.tratamentos{
+    border: 1px solid rgb(214, 92, 22);
+    /*margin: 15px 10px;*/
+    /*text-align: center;*/
+    
+}
+.tratamentos> h1{
+    /*border: 1px solid rgb(214, 92, 22);*/
+    margin: 50px 0;
+    text-align: center;
+    
+}
+.tratamentos> div.container> div.tratamento-container{
+    border: 1px solid #f3f705;
+    /*margin: 5px 10px;*/
+    float: left;
+    width: 33.3%;
+}
+.tratamentos> div.container div.tratamento-container> div.tratamento-single{
+    border: 1px solid blue;
+    /*margin: 5px 10px;*/
+    padding: 1.4rem;
+}
+.tratamentos> div.container div.tratamento-container> div.tratamento-single> h2{
+    font-size: 1.1rem;
+    color: #737373;
+}
+.tratamentos> div.container div.tratamento-container> div.tratamento-single> p{
+   font-size: 0.8rem;
+   color:black;
+   padding:10px 0;  
+}
+
+#container.container{
+    border: 1px solid rgb(100, 128, 0);
+    max-width: 1200px;
+    margin: 10px auto;
+}
+/*AQUI É O FIM DA SECTION TRATAMENTO*/
+/*DEPOIMENTO INICIO*/
+
+section.depoimentos{
+    max-width: 500px;
+    margin: 10px auto;
+}
+.depoimentos> h2{
+    margin: 10px 0;
+    text-align: center;
+    font-size:1.4rem;
+}
+.depoimento-single{
+    text-align: center;
+    margin: 5px 0 ;
+    padding: 10px 0;
+}
+.depoimento-single img{
+    border-radius: 20px;
+    
+}
+div.nome-depoimento{
+    padding: 15px 0;
+}
+div.nome-depoimento span{
+    vertical-align:top;
+    position: relative; top: 5px;
+    font-weight: bold;
+}
+/*DEPOIMENTO FIM*/
+
+
+/*SOCIAL INICIO*/
+section.social{
+    border: 1px solid black;
+    
+    
+}
+div.instagram-chamada{
+    border: 1px solid red;
+    max-width:100%;
+    margin: 0px auto;
+    text-align: center;
+    background-color:#98a5ae;
+    padding: 20px;
+}
+div.facebook-chamada{
+
+    border: 1px solid red;
+    max-width:100%;
+    margin: 0px auto;
+    text-align: center;
+    background-color:#576975;
+    padding: 20px;
+    
+   
+}
+
+.mosaico-social{
+    float: left;
+    width: 100%;
+    border: 1px solid black;
+    background-color:red;
+    
+}
+.img-mosaico-single-social{
+    float: left;
+    width: calc(100% / 9);
+    padding-top: calc(100% / 9);
+    background-color: white;
+    border: 5px solid blue;
+    text-align: center;
+ 
+    }
+/*SOCIAL FIM*/
+
+/* INICIO CONTATO*/
+section.contato{
+    padding: 60px 0 ;
+    text-align: center;
+    
+    
+}
+section.contato> h2{
+    background-color: rgb(202, 36, 24); 
+    border: 1px solid rgb(7, 7, 6);
+    text-align: center;
+    font-size: 18px;
+    
+    
+}
+section.contato> form{
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid rgb(7, 7, 6);
+    max-width:600px;
+    margin: 0 auto;
+    background-color: whitesmoke
+   
+}
+
+
+
+
+/* FIM CONTATO*/
+
+
+/*AQUI INICIA AS MEDIAS QUERY*/
+@media screen and (max-width:1024px){
+    .img-mosaico-single-social{
+        float: left;
+        width: calc(100% / 6);
+        padding-top: calc(100% / 6);
+        background-color: white;          
+        }
+
+    .mosaico-social > div:nth-of-type(1n+7){
+        display:none;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    div.container nav.menu-desktop{
+        display: none;
+    }
+
+    div.container nav.menu-mobile{
+         display: block;
+         
+         
+        }
+
+    div.container nav.menu-mobile ul{
+        list-style-type: none;
+        
+    }
+    
+    div.container nav.menu-mobile ul li a{
+        text-decoration: none;
+        font-weight: bold;
+        
+    }
+
+
+    section.servicos > .container  {
+       /* display: flex; 
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto; 
+        align-items: center;
+        border: 3px solid rgb(17, 245, 47);
+        background-color:hsl(25, 76%, 31%, 0.5)*/
+        /*height:400px;*/
+        /*color: rgb(248, 21, 173);*/        
+        flex-direction: column;
+
+                
+    }
+    .img-mosaico-single-social{
+        float: left;
+        width: calc(100% / 3);
+        padding-top: calc(100% / 3);
+        background-color: white;          
+        }
+
+
+    .mosaico-social > div:nth-of-type(1n+4){
+        display:none;
+    }
+
+    /* CONFIGURAÇÃO DA BOX DO LADO DIREITO*/
+       section.servicos >.container .box-servicos:nth-last-of-type(1){
+        color:rgb(18, 233, 36);
+        width: 90%;
+        max-width: 350px;
+        padding: 30px 2%;
+       /* background-color: #576975;*/
+    }
+    /* CONFIGURAÇÃO DA BOX DO LADO CENTRO*/
+    section.servicos >.container .box-servicos:nth-last-of-type(2){
+        color:rgb(56, 7, 218);
+        width:94%;
+        max-width: 380px;
+        padding: 40px 2%;
+       /* background-color: #688293;*/
+       /* background-image: none;*/
+    }
+    /* CONFIGURAÇÃO DA BOX DO LADO ESQUERDO*/
+    section.servicos >.container .box-servicos:nth-last-of-type(3){
+        color:rgb(218, 204, 7);
+        max-width: 350px;
+        width: 90%;
+        padding: 30px 2%;
+        /*background-color: #576975;*/
+    
+    }
+     
+    /* CAPSULA ONDE ESTÁ A IMAGEM, H2 E O P */
+    section.perfil-container .capsula-perfil-2{
+      /*  position: absolute; left: 0; top: 0;*/
+       /* display: flex;*/
+        /*padding: 25px;*/
+       /* width: 100%;*/
+        position: static;
+        height: auto;
+        background-color: springgreen;
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+       /* margin: 0 auto;*/
+        
+    }
+
+    section.perfil-container .capsula-perfil{
+        padding-top: 0;
+    }
+    /* MANIPULA A IMAGEM QUE ESTÁ DENTRO DO PERFIL-CONTAINER*/
+    section.perfil-container .img-perfil{
+        display: inline-block;
+        height: auto;
+        width:60%;
+        padding-top: 80%;
+        
+        background-image: url('../images/img_perfil.png');
+        background-size: 100% 100%;
+    }
+
+    /*MANIPULA CAIXA ONDE FICA O TEXTO DO PERFIL*/
+    .texto-perfil{
+        display: inline-block;
+        text-align: justify;
+        
+        width: 100%;
+        padding: 30px 30px;
+        }
+    /* AQUI INICIA A MANIPULAÇÃO DA SECTION VIDEOS*/
+        section.videos .box-video{
+            /*float: left;*/
+            width:100%;
+           /* position: relative;*/
+            border: 5px solid white;
+            background-color: chartreuse;
+            padding-top: calc(100% * 0.6);
+        }
+        section.videos .box-video iframe{
+            position: absolute; left: 0; top: 0;
+            width: 100%;
+            height: 100%;
+            
+        }
+    /* AQUI FINALIZA A  MANIPULAÇÃO DA SECTION VIDEOS*/
+}
+
+
+
+@media screen and (max-width: 580px){
+
+         /* MANIPULA A IMAGEM QUE ESTÁ DENTRO DO PERFIL-CONTAINER*/
+    section.perfil-container .img-perfil{
+        display: inline-block;
+        height: auto;
+        width:80%;
+        padding-top: 110%;
+        
+        background-image: url('../images/img_perfil.png');
+        background-size: 100% 100%;
+    }
+
+
+
+        @media screen and (max-width: 480px){
+            div.box-logo img{
+             /*   float: left;*/
+                width: 200px;
+               
+            }
+
+
+        }
+
+}
