@@ -423,11 +423,12 @@ section.contato{
     
 }
 section.contato> h2{
-    background-color: rgb(202, 36, 24); 
+    background-color: #b3c6ff; 
     border: 1px solid rgb(7, 7, 6);
     text-align: center;
-    font-size: 18px;
-    color:#698293;
+    font-size: 24px;
+    color: black;
+    font-weight: 300;
     
     
 }
@@ -437,18 +438,21 @@ section.contato> form{
     max-width:600px;
     margin: 20px auto;
     border: 3px solid rgb(207, 207, 8);
+    padding: 5px 5px 20px 5px;
    
 }
 .form-wraper {
     float: left;
     margin-top: 10px;
     /*background-color: black;*/
-    padding: 0 10px
+    padding: 0 10px;
+    background-color: rgb(59, 219, 112);
 }
 
 .form-wraper span{
     color: #dadada;
     font-size: 15px;
+    font-weight: 600;
 }
 .form-wraper  input[type="text"]{
     color: rgb(20, 15, 15);
@@ -456,13 +460,28 @@ section.contato> form{
     height: 35px;
     line-height: 35px;
     padding: 9px;
-    border: 1px solid #dadada;
+    border: 3px solid #8bd826;
     margin-top: 8px;
+    margin-bottom: 5px;
+}
+.form-wraper.submit input[type="submit"]{
+    width: 100px;    
+    height: 35px;
+    margin: 10px 0; 
+    background-color: rgb(115, 121, 201);
+    border-radius: 10px;
+   
+}
+.form-wraper.submit{
+   text-align: center;
 }
 
 .form-wraper textarea{
     width: 100%;
     padding: 10px;
+    height: 121px;
+    resize: none;
+    
 }
 
 
@@ -655,5 +674,9 @@ section.contato> form{
 
 
         }
+
+    .w50 {
+        width: 100%;
+    }
 
 }
