@@ -417,7 +417,7 @@ div.facebook-chamada{
 
 /* INICIO CONTATO*/
 section.contato{
-    padding: 60px 2%;
+    padding: 30px 2%;
     /*text-align: center;*/
     
     
@@ -448,7 +448,6 @@ section.contato> form{
     padding: 0 10px;
     background-color: rgb(59, 219, 112);
 }
-
 .form-wraper span{
     color: #dadada;
     font-size: 15px;
@@ -475,7 +474,6 @@ section.contato> form{
 .form-wraper.submit{
    text-align: center;
 }
-
 .form-wraper textarea{
     width: 100%;
     padding: 10px;
@@ -483,25 +481,52 @@ section.contato> form{
     resize: none;
     
 }
-
-
-
 .w100 {
     width: 100%;
     border: 2px solid rgb(235, 21, 181);
 }
-
 .w50 {
     width: 50%;
     border: 2px solid rgb(235, 21, 181);
 }
-
-
-
 /* FIM CONTATO*/
+
+/* FOOTER INICIO*/
+
+section.footer{
+    background-color:red;
+    /*border: 5px solid orange;*/
+    padding: 35px 0;
+    text-align: center;    
+}
+
+div.footer-block{
+    
+    float:left;
+    width:33.3%;
+    background-color:#b3c6ff
+}
+div.footer-block h2{
+    font-size: 16px
+}
+div.footer-block p{
+    font-size: 14px
+}
+
+div.container.footer{
+    max-width: 900px;
+    margin: 0 auto;
+    padding:  2%;
+    border: 1px solid blue;
+    
+}
+
+/* FOOTER FIM*/
 
 
 /*AQUI INICIA AS MEDIAS QUERY*/
+
+
 @media screen and (max-width:1024px){
     .img-mosaico-single-social{
         float: left;
@@ -514,7 +539,16 @@ section.contato> form{
         display:none;
     }
 }
-
+@media screen and (max-width:920px){
+    div.footer-block{
+    
+        float:none;
+        width:100%;
+        margin:5px auto;
+        max-width:600px;
+        background-color:#b3c6ff
+    }
+}
 @media screen and (max-width: 768px){
 
     div.container nav.menu-desktop{
